@@ -1,0 +1,92 @@
+{
+  "uuid": "e94eb09f-219b-4a5b-a0f5-e4e40e795beb",
+  "lastMigration": 22,
+  "name": "Choco mock",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3001,
+  "hostname": "0.0.0.0",
+  "routes": [
+    {
+      "uuid": "bd091b52-1a0d-4a77-9ec9-20a338930c54",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "asset/:search",
+      "responses": [
+        {
+          "uuid": "db02b8cf-1910-4112-b388-8832dae59abc",
+          "body": "{\n  \"output\": \"{{urlParam 'search'}}\",\n  \"query\": \"{{queryParam 'val' 'my default' true}}\",\n  \"data\": \"Hello World\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    },
+    {
+      "uuid": "2d285b9e-0553-4f28-b18b-3f149fab7461",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "file",
+      "responses": [
+        {
+          "uuid": "047f8f8d-403d-465b-b139-2119038c74ed",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "filePath": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true
+        }
+      ],
+      "enabled": true,
+      "responseMode": null
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ]
+}
